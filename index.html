@@ -1,0 +1,137 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simba's Refugees</title>
+  <style>
+    body{
+      background-color: #6B120E;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .container{
+      border: #6B120E solid 2px;
+      border-radius: 10px;
+      background-color: #FF9B15;
+      margin: 5px;
+      padding: 5px;
+    }
+    h1{
+      text-align: center;
+      color: #1C0001;
+    }
+    #nav-bar{
+      text-align:center;
+      color: black;
+    }
+    h3{
+      font-size: 15px;
+    }
+    img{
+      max-height: 50%;
+      max-width: 50%;
+      border: #6B120E solid 2px;
+      border-radius: 5px;
+    }
+    #submit-button{
+      background-color: #1C0001;
+      color: #FCF03C;
+      border:#6B120E solid 1px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="top" class="container">
+    <h1>Simba's Refugees</h1>
+  </div>
+  <nav id ="nav-bar" class="container">
+    <a href=#my-father class="nav-bar-link">My Father</a>
+    <a href=#scar class="nav-bar-link">Who is Scar?</a>
+    <a href=#join-us class="nav-bar-link">Join Us</a>
+  </nav>
+
+  <section id="my-father"class="container">
+    <h2>My Father - My Role Model</h2>
+    <h3>Date: Oct. 11, 5000 B.C</h3>
+    <p>I've always had a hard time living up to my father's name. He was always looked up to
+      in our side of the world. It's a shame what happened to him... <br> My uncle was someone
+      who was always a very jealous person. Given that my father was successful, and that everyone
+      looked up to him - it always really seemed to annoy my uncle. I guess he eventually found
+      an opening to finally enact his plan. His plan to assassinate my father. <br><br> It's crazy what
+      jealousy will do to some people. I thought my uncle was always quite cool but it looks like
+      he had other plans. They were alone together one day and they must have gotten into an 
+      argument because at one point in time my father found himself hanging off the edge of a cliff!
+      He was holding on for dear life, pleading with my uncle wondering why is it taking him so long
+      to come over here and save me? It turns out this is what my uncled had planned anyways - so
+      he went up to my father, stepped on his hand and said the words 'Long live the king.'
+    </p>
+  </section>
+
+  <section id="scar" class="container">
+    <h2>Help us take him down!</h2>
+    <p>This man has been causing chaos ever since murdering my father and becoming our 'leader'
+      But he is no leader. He is a snake, a murdered, evil and deceptive. Anyone who falls for his 
+      tricks are unfortunately being deceived. He is starving our population and exiling anyone 
+      who disagrees with his philosophy.
+    </p>
+    <aside>
+      <figure>
+        <img src="https://www.hollywoodreporter.com/wp-content/uploads/2017/09/lion_king_1994_038.jpg?w=1296"
+        alt="Scar, the evil, villainous, lying lion.">
+        <figcaption>This is scar. The evil, villainous, lying lion who murdered my father.</figcaption>
+      </figure>
+    </aside>
+  </section>
+
+  <footer id ="join-us" class="container">
+    <h2>Join us in taking down Scar!</h2>
+    <h3>Enter in your contact information below so we can defeat this bully.</h3>
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+      <label for="phone-number">Phone #:</label>
+      <input type="number" id="phone-number" name="phone-number"><br><br>
+      <input type="submit" id="submit-button" value="Submit"><br><br>
+      
+    </form>
+    <a href=#top>Back To Top</a>
+  </footer>
+
+</body>
+</html>
